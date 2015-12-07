@@ -18,8 +18,16 @@ Template.TestSoap.helpers({
     {
         return this['Kunde'][0]['Name'][0];
     },
-    getIndex : function(){
-        return this['Index'][0];
+    getX : function(){
+        var localX = this['Adresse'][0]['X'][0];
+        return localX;
+    } ,
+    getY : function(){
+        var localY = this['Adresse'][0]['Y'][0];
+        return localY;
+    },
+    getAdresse :function(){
+        var localY = this['Adresse'][0]['Adresse'][0];
     }
 });
 

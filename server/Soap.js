@@ -34,13 +34,19 @@ Meteor.methods({
             .log(ctx.request)
        ws.send(handlers, ctx, function(ctx) {
            console.log("response: " + ctx.response);
+           var _time = (new Date).toString();
+           console.log("before" +_time);
            xml2js.parseString( ctx.response, function (err, result) {
                if(result['s:Envelope']['s:Body'][0]['s:Fault'])
                {
+                   var _time = (new Date).toString();
+                   console.log("error" +  _time);
                    future.return(null);
                }else {
                    var newResult = result['s:Envelope']['s:Body'][0]['GetDeliveriesResponse'][0]["GetDeliveriesResult"][0];
                    var Deliveries = newResult['Deliveries'][0]['ShallowLevering'];
+                   var _time = (new Date).toString();
+                   console.log("no errors " + _time);
                    future.return(Deliveries);
                }
            });

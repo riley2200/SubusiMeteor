@@ -15,7 +15,8 @@
     <ul>
     {{#each getSoap}}
        <li>
-{{getKundeName}}  - {{ getIndex}}
+{{getKundeName}} <br>
+           <a href="geo:{{getX}},{{getY}}">{{getAdresse}}</a>
        </li>
         {{/each}}
     </ul>
