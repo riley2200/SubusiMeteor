@@ -1,0 +1,22 @@
+<head>Test a JS</head>
+
+<body>
+<h1>Her tester vi webservice</h1>
+
+{{> TestSoap }}
+</body>
+
+<template name="TestSoap">
+    <form id="testForm">
+        <input type="text" id="name"><br>
+<input type="text" id="pass"><br>
+        <button id="submit">test</button>
+    </form>
+    <ul>
+    {{#each getSoap}}
+       <li>
+{{getKundeName}}  - {{ getIndex}}
+       </li>
+        {{/each}}
+    </ul>
+</template>

@@ -1,8 +1,10 @@
 /**
  * Created by Riley on 04/12/2015.
  */
+var Future = Npm.require( 'fibers/future' );
 Meteor.methods({
-   subusiHelloWorld : function(){
+   subusiHelloWorld : function(args){
+       var future = new Future();
 
        var ws = Meteor.npmRequire('ws.js');
            var Http = ws.Http;
@@ -20,18 +22,30 @@ Meteor.methods({
 
        var ctx =  { request: request
            , url: "https://subusi.monsterservice.dk:444/SubusiService.svc/secure"
-           , action: "http://tempuri.org/ISubusiService/HelloWorld"
+           , action: "http://tempuri.org/ISubusiService/GetDeliveries"
            , contentType: "text/xml"
        };
 
 
-       var handlers =  [ new Security({}, [new UsernameToken({username: "allan", password: "222"})])
+       var handlers =  [ new Security({}, [new UsernameToken({username: args.name, password: args.pass})])
            , new Http()
        ];
-
+        console
+            .log(ctx.request)
        ws.send(handlers, ctx, function(ctx) {
            console.log("response: " + ctx.response);
+           xml2js.parseString( ctx.response, function (err, result) {
+               if(result['s:Envelope']['s:Body'][0]['s:Fault'])
+               {
+                   future.return(null);
+               }else {
+                   var newResult = result['s:Envelope']['s:Body'][0]['GetDeliveriesResponse'][0]["GetDeliveriesResult"][0];
+                   var Deliveries = newResult['Deliveries'][0]['ShallowLevering'];
+                   future.return(Deliveries);
+               }
+           });
        });
+       return future.wait();
    }
 
 });

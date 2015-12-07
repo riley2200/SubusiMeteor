@@ -23,3 +23,5 @@ meteorhacks:npm
 
 
 npm-container
+peerlibrary:xml2js
+reactive-var
