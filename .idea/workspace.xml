@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9877532a-42f3-4df4-85b6-70e59ffa008b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/SubusiMeteor.html" afterPath="$PROJECT_DIR$/client/SubusiMeteor.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/SubusiMeteor.js" afterPath="$PROJECT_DIR$/client/SubusiMeteor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/npm-container/.npm/package/.gitignore" afterPath="$PROJECT_DIR$/packages/npm-container/.npm/package/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/npm-container/.npm/package/README" afterPath="$PROJECT_DIR$/packages/npm-container/.npm/package/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/npm-container/.npm/package/npm-shrinkwrap.json" afterPath="$PROJECT_DIR$/packages/npm-container/.npm/package/npm-shrinkwrap.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Soap.js" afterPath="$PROJECT_DIR$/server/Soap.js" />
     </list>
     <ignored path="Subusi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,8 +39,8 @@
       <file leaf-file-name="SubusiMeteor.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/SubusiMeteor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.423077">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            <state vertical-scroll-proportion="-11.115385">
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -55,8 +49,8 @@
       <file leaf-file-name="SubusiMeteor.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/SubusiMeteor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.5011338">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,8 +109,8 @@
         <option value="$PROJECT_DIR$/SubusiMeteor.js" />
         <option value="$PROJECT_DIR$/packages.json" />
         <option value="$PROJECT_DIR$/server/Soap.js" />
-        <option value="$PROJECT_DIR$/client/SubusiMeteor.js" />
         <option value="$PROJECT_DIR$/client/SubusiMeteor.html" />
+        <option value="$PROJECT_DIR$/client/SubusiMeteor.js" />
       </list>
     </option>
   </component>
@@ -354,21 +348,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/Soap.js</url>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client/SubusiMeteor.js</url>
-          <line>24</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client/SubusiMeteor.js</url>
-          <line>28</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client/SubusiMeteor.js</url>
-          <line>22</line>
-          <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="60" />
@@ -621,14 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/SubusiMeteor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.423077">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/Soap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -639,10 +610,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/SubusiMeteor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/SubusiMeteor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.5011338">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>

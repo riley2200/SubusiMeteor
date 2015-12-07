@@ -15,8 +15,8 @@ Template.TestSoap.helpers({
         }
     },
     getKundeName : function()
-    {
-        return this['Kunde'][0]['Name'][0];
+    { var kundeName = this['Kunde'][0]['Name'][0];
+        return kundeName;
     },
     getX : function(){
         var localX = this['Adresse'][0]['X'][0];
@@ -27,7 +27,8 @@ Template.TestSoap.helpers({
         return localY;
     },
     getAdresse :function(){
-        var localY = this['Adresse'][0]['Adresse'][0];
+        var adress = this['Adresse'][0]['Adresse'][0];
+        return adress;
     }
 });
 
